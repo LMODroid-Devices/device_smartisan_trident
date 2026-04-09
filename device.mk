@@ -266,10 +266,8 @@ PRODUCT_PACKAGES += \
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/goodix-touchscreen.idc:system/usr/idc/goodix-touchscreen.idc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/keylayout/nvt_fpr_input.kl:system/usr/keylayout/nvt_fpr_input.kl
 
 # IPA
 PRODUCT_PACKAGES += \
