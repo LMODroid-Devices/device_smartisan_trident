@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/zte/akershus
+DEVICE_PATH := device/smartisan/trident
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -25,7 +25,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := akershus
+TARGET_OTA_ASSERT_DEVICE := trident
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm845
@@ -41,8 +41,8 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := vendor/zte/akershus_defconfig
-TARGET_KERNEL_SOURCE := kernel/zte/sdm845
+TARGET_KERNEL_CONFIG := vendor/smartisan/trident_defconfig
+TARGET_KERNEL_SOURCE := kernel/smartisan/sdm845
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
@@ -185,4 +185,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/zte/akershus/BoardConfigVendor.mk
+include vendor/smartisan/trident/BoardConfigVendor.mk
