@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2248
+TARGET_SCREEN_HEIGHT := 2242
 TARGET_SCREEN_WIDTH := 1080
 
 # Boot control
