@@ -386,6 +386,10 @@ PRODUCT_PACKAGES += \
     libxml2 \
     libsqlite.vendor:64
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_trident
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
