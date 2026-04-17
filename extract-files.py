@@ -103,7 +103,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libsensor.so', 'libsensor_vendor.so'),
     'vendor/lib/hw/audio.primary.sdm845.so': blob_fixup()
         .add_needed('libprocessgroup.so')
-        .replace_needed('libtinycompress_vendor.so', 'libtinycompress.so'),
+        .replace_needed('libtinycompress_vendor.so', 'libtinycompress.so')
+        .sig_replace('06 00 a0 e1  28 10 a0 e3  08 20 a0 e1  04 30 a0 e1', '06 00 a0 e1  2b 10 a0 e3  08 20 a0 e1  04 30 a0 e1')
+        .sig_replace('00 00 a0 e3  65 00 52 e3  1e ff 2f 81', '00 00 a0 e3  54 00 52 e3  1e ff 2f 81'),
     ('vendor/etc/init/android.hardware.biometrics.fpcfingerprint@2.1-service.rc', 'vendor/etc/init/android.hardware.biometrics.goodixfingerprint@2.1-service.rc', 'vendor/etc/init/android.hardware.biometrics.nvtfingerprint@2.1-service.rc'): blob_fixup()
         .regex_replace('system input', 'system uhid input'),
     'vendor/lib/camera/components/com.inv.node.eis.so': blob_fixup()
