@@ -24,6 +24,7 @@
 # Persist files
 /mnt/vendor/persist/audio(/.*)?                                                                        u:object_r:persist_audio_file:s0
 /mnt/vendor/persist/camera/megvii(/.*)?                                                                u:object_r:persist_camera_file:s0
+/mnt/vendor/persist/gyro_calib.bin                                                                     u:object_r:persist_camera_file:s0
 /mnt/vendor/persist/spkr_calib_(l|r).bin                                                               u:object_r:persist_audio_file:s0
 /mnt/vendor/persist/otp_info                                                                           u:object_r:persist_fingerprint_file:s0
 
