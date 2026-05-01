@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_trident.mk
+    $(LOCAL_DIR)/lmodroid_trident.mk
